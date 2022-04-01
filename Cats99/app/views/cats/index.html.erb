@@ -1,0 +1,15 @@
+<table>
+    <thead>
+        <th colspan="3">All of the Cats in the World</th>
+    </thead>
+    <tbody>
+        <% (0...@cats.length).step(3) do |i| %>
+            <tr>
+                <td><%= @cats[i].name %></td>
+                <td><%= @cats[i+1].name %></td>
+                <td><%= @cats[i+2].name %></td>
+            </tr>
+        <% end %>
+    </tbody>
+</table>
+
