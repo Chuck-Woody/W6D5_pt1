@@ -16,7 +16,6 @@ class CatsController < ApplicationController
     end
    
     def new
-        @colors = Cat.colors
         @cat = Cat.new
         render :new
     end
